@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <ImageView 
+        android:id="@+id/img_icon_detail"
+        android:layout_width="@dimen/item_img_width"
+        android:layout_height="@dimen/item_img_heigth"
+        android:background="@color/item_img_icon_desc"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="@dimen/item_img_margin_top"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        style="@style/item_text_view_status"
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_status_magrin_top"
+        android:layout_alignLeft="@+id/img_icon_detail"
+        android:layout_below="@+id/img_icon_detail"/>
+    
+    <TextView
+        style="@style/item_text_view_down"
+        android:id="@+id/tv_temperature_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_temperature_min_magrin_top"
+        android:layout_alignLeft="@+id/img_icon_detail"
+        android:layout_below="@+id/tv_desc"/>
+    
+    <TextView
+        style="@style/item_text_view_down"
+        android:id="@+id/tv_temperature_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_icon_detail"
+        android:layout_below="@+id/tv_temperature_min"/>
+
+</RelativeLayout>

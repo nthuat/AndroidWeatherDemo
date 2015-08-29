@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="lv_padding">10dp</dimen>
+    
+    <dimen name="item_tv_text_size">15sp</dimen>
+    
+    <dimen name="list_view_divider_height">1dp</dimen>
+    
+    <dimen name="item_img_land_width">128dp</dimen>
+    <dimen name="item_img_land_heigth">128dp</dimen>
+    <dimen name="item_detail_land_padding">28dp</dimen>
+    <dimen name="item_img_width">208dp</dimen>
+    <dimen name="item_img_heigth">208dp</dimen>
+    <dimen name="item_status_land_margin_top">8dp</dimen>
+    <dimen name="item_img_margin_top">48dp</dimen>
+    <dimen name="item_status_magrin_top">16dp</dimen>
+    <dimen name="item_temperature_min_magrin_top">8dp</dimen>
+
+</resources>

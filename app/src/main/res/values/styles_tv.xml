@@ -1,0 +1,19 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="item_text_view_up">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">@dimen/item_tv_text_size</item>
+        <item name="android:textColor">@color/item_tv_up</item>
+    </style>
+    
+    <style name="item_text_view_down">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">@dimen/item_tv_text_size</item>
+        <item name="android:textColor">@color/item_tv_down</item>
+    </style>
+    
+    <style name="item_text_view_status">
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">@dimen/item_tv_text_size</item>
+        <item name="android:textColor">@color/item_tv_status</item>
+    </style>
+</resources>

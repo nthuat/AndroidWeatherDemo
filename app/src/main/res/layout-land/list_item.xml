@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/lv_padding"
+    tools:context="com.example.sampleweatherapp.MainActivity" >
+
+    <TextView
+        style="@style/item_text_view_up"
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        style="@style/item_text_view_down"
+        android:id="@+id/tv_temperature_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_day"/>
+
+    <TextView
+        style="@style/item_text_view_down"
+        android:id="@+id/tv_temperature_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_temperature_min"
+        android:layout_below="@+id/tv_day"/>
+    
+    <ImageView 
+        android:id="@+id/img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"        
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>

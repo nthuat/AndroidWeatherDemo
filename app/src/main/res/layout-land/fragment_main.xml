@@ -1,0 +1,70 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:weightSum="2"
+    tools:context="com.example.sampleweatherapp.MainActivity" >
+    
+    <ListView 
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_weight="0.99"
+        android:background="@color/list_view_background"
+        android:layout_height="match_parent"
+        android:divider="@color/list_view_divider"
+        android:dividerHeight="@dimen/list_view_divider_height"/>
+    
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01"
+        android:contentDescription="@string/app_name"
+        android:background="@color/item_tv_down"/>
+    
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/item_detail_land_padding"
+        android:background="@android:color/background_light"
+        android:layout_weight="1">
+        
+        <ImageView
+            android:id="@+id/img_icon_detail"
+            android:layout_width="@dimen/item_img_land_width"
+            android:layout_height="@dimen/item_img_land_heigth"
+            android:layout_centerHorizontal="true"
+            android:background="@color/item_img_icon_desc"
+            android:contentDescription="@string/app_name"/>
+        
+        <TextView 
+            style="@style/item_text_view_status"
+            android:id="@+id/tv_desc"
+            android:layout_marginTop="@dimen/item_status_land_margin_top"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_icon_detail"/>
+        
+        <TextView 
+            style="@style/item_text_view_down"
+            android:id="@+id/tv_temperature_min"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_desc"/>
+
+        <TextView
+            style="@style/item_text_view_down"
+            android:id="@+id/tv_temperature_max"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_temperature_min"/>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

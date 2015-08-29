@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_tv_up">#0f0a06</color>
+    <color name="item_tv_down">#a39995</color>
+    <color name="item_tv_status">#4db4e8</color>
+    <color name="list_view_background">#fafafa</color>
+    <color name="item_img_icon_desc">#b4b4b4</color>
+    <color name="list_view_divider">#f1f1f1</color>
+    
+</resources>
